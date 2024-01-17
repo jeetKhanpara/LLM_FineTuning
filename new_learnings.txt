@@ -1,0 +1,10 @@
+
+tqdm,sys,langchain,pytorch,transformers,datasets module
+
+oops python getting better, static method, class method
+eval function
+project structure
+dealing with list and dictionaries 
+how module and packages work, how to access them from different location,sys module
+os module and reading,writing file getiing better
+sorted function with key was cherry on the cake

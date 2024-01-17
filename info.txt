@@ -1,0 +1,32 @@
+Config folder:
+    contains main path of file and starting and ending index of datapoint
+    one datapoint contains info about one property
+
+data folder :
+    raw folder :
+        here is the data.json file.
+        from here data is processed first.
+    interim :
+        new created dataset form save_extracted function
+    final :
+        contains all the data combined from interim folder with the updated keys
+        train_test_final.txt contains final outut which is tokenized
+
+Dataloader :
+    dataloader :
+         contais the main class Dataloader where all the methods are encapsulated.
+        from data loading to extrating tags and saving it
+    templates :
+        contains main prompt tamplate used in llm and tags to be extracted
+    
+
+data_generate.py :
+    executes loading the file to extract the tags and save it to interim folder
+
+save_final_jsonfile.py :
+    save all the extracted tags which are present in the array of dictionary into the
+final_dataset.jsonl which is our final file for training the model
+
+create_token.py
+    will create token for final_dataset.jsonl and split them into train and test dataset 
+
